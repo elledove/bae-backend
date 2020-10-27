@@ -23,4 +23,14 @@ class Order < ApplicationRecord
       end
 
 
+
+      # This method will be repsonible for updating the items if the order.
+    def update_order_item
+        
+        end
+
+        
+    end
+
+
 end
