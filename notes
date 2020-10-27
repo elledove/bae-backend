@@ -1,0 +1,49 @@
+Models that  I want to have in my project:
+
+-Users Model
+-Order Model
+-Menu Items Model
+
+
+
+
+Clients will come to the website and create an account:
+  - Once they create an account they will be able to place an Order
+  -A client can have many orders
+  *has_many: orders
+
+  -- name:
+  --password:
+
+
+
+Order requested will be made by the client:
+  - CLients will have the option to place more than one order.
+   -Order belongs a client  
+   *belongs_to: client
+   *has_many Menu Items
+
+
+
+
+Menu Items
+*belongs_to order
+entree: -string
+drinks: - string
+desserts: - string
+quantity: integer
+price: - float
+OR 
+name: - string
+description: -string
+price: - float
+
+
+
+
+
+   The Flow:
+   - A person will come to the website and see the Menu
+   -They will then Fill out a form to select what they want from the Menu
+   - Once they have selected what they want from the menu, then they can place the order.
+   
