@@ -1,8 +1,10 @@
-class API::V1::OrdersController < ApplicationController
+class Api::V1::OrdersController < ApplicationController
     #This is run whatever methods we tell it to, before it gets to the standard actions.
    #before_action :set_user
 
     def index
+        orders = Order.all
+        render json: orders
     end
 
     def new 
@@ -28,12 +30,12 @@ class API::V1::OrdersController < ApplicationController
 
 
 
-   api/v1/user/3/order
+   #api/v1/user/3/order
 
     private
-        # def set_user
-        #     @user = User.find(params[:user_id])
-        # end
+         def set_user
+             @user = User.find(params[:user_id])
+         end
 
         # How do we add items from the menu to the current order? Here or in state?
         def add_items_to_order

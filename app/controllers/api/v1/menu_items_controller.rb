@@ -1,4 +1,4 @@
-class API::V1::MenuItemsController < ApplicationController
+class Api::V1::MenuItemsController < ApplicationController
 
 def index
     items = MenuItem.all
