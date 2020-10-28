@@ -18,3 +18,4 @@ b1 = MenuItem.create(name:"strawberry lemonade", description:"homemade and homeg
 # Test orders
 
 order1 = Order.create!(user_id:1, total: 20, name_for_order: Faker::Name.first_name, menu_item_ids:[Faker::Number.within(range: 1..4), Faker::Number.within(range: 1..4)] )
+order1 = Order.create!(user_id:1, total: 20, name_for_order: Faker::Name.first_name, menu_item_ids:[Faker::Number.within(range: 1..4), Faker::Number.within(range: 1..4)] )
