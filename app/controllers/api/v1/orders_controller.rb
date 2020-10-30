@@ -2,14 +2,15 @@ class Api::V1::OrdersController < ApplicationController
     #This is run whatever methods we tell it to, before it gets to the standard actions.
    #before_action :set_user
 
+   #current_users.orders
     def index
         orders = Order.all
         render json: orders
     end
 
-    def new 
-        order = Order.new
-    end
+    # def new 
+    #     order = Order.new
+    # end
 
 
     def create
