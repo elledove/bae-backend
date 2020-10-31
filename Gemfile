@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.1'
 
-require 'faker'
+#require 'faker'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
@@ -30,6 +30,8 @@ gem 'bootsnap', '>= 1.4.2', require: false
  gem 'devise-jwt'
  gem 'dotenv-rails' , groups:[:development,:test]
  gem 'rspec-rails',   groups:[:development,:test]
+ gem 'fabrication',   groups:[:development,:test]
+ gem 'faker',         groups:[:development,:test]
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
