@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
 
+  #devise_for :users
     #devise-jwt said this step wasn't needed if rails is apo on but just in case:
     #root to:"home#index"
 

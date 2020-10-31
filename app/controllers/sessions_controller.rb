@@ -5,8 +5,8 @@ class SessionsController < Devise::SessionsController
 
     private
 
-    def repsond_with(resource,_opts = {})
-        render json:resource
+    def repsond_with(resource, _opts = {})
+        render json: resource
     end
 
     def respond_to_on_destroy
