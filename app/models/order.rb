@@ -6,7 +6,7 @@ class Order < ApplicationRecord
 
     validates :name_for_order, presence: true
     #this validation will make sure that the order has the menu_item_id attached to each order.
-    validates :menu_item_ids, presence: true
+    #validates :menu_item_ids, presence: true
 
    #This method will keep track of how may orders come through the system.
     def self.order_count

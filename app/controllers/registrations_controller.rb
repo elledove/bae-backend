@@ -1,5 +1,5 @@
 class RegistrationsController < Devise::RegistrationsController
-    repsond_to :json
+    respond_to :json
 
 
     def create

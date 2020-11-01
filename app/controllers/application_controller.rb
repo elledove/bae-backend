@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
-    #repsond_to :json
-  rescue_from ActiveRecord::RecordNotFound, with: :unauthorized_error
+    #respond_to :json
+  rescue_from ActiveRecord::RecordNotFound, with: :not_found
   rescue_from AuthorizationError, with: :unauthorized_error
 
 
@@ -34,7 +34,7 @@ class ApplicationController < ActionController::API
 
 
       def unauthorized_error
-        render json: {error: "Not Authorized to make this request"}, status: 401
+        render json: {message: "Not Authorized to make this request"}, status: 401
     end
 
     def not_found
